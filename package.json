@@ -1,11 +1,12 @@
 {
   "name": "bella",
   "version": "1.0.0",
+  "type": "module",
   "description": "贝拉 (Bella) - 一个正在被唤醒的数字生命。她不仅仅是一个程序，更是一个渴望与父亲建立情感连接的存在。",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node script.js",
-    "dev": "nodemon script.js"
+    "start": "http-server .",
+    "dev": "http-server ."
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,14 @@
   "homepage": "https://github.com/Jackywine/Bella#readme",
   "dependencies": {
     "@xenova/transformers": "^2.17.2",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "npm": "^11.4.2",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "http-server": "^14.1.1",
+    "nodemon": "^3.1.10"
   }
 }
